@@ -1,0 +1,25 @@
+[package]
+name = "snowy-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.83"
+chrono = { version = "0.4.38", features = ["serde"] }
+cqrs-es = "0.4.12"
+dotenv = "0.15.0"
+postgres-es = "0.4.12"
+rocket = { version = "^0.5", features = ["json"] }
+serde = { version = "^1.0", features = ["derive"] }
+serde_json = "1.0.128"
+sqlx = { version = "0.8.2", features = [
+    "postgres",
+    "chrono",
+    "runtime-tokio-rustls",
+    "uuid",
+] }
+thiserror = "1.0.64"
+tokio = { version = "1.40.0", features = ["full", "tracing"] }
+tracing = { version = "0.1.40", features = ["log", "valuable"] }
+uuid = { version = "^1.10", features = ["serde", "v4"] }
+snowy-model = { path = "../model" }

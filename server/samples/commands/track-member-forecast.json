@@ -1,0 +1,11 @@
+{
+    "TrackMemberForecast": {
+        "member_id": "1234567891",
+        "forecast": {
+            "date": "2020-01-01",
+            "minimum_temperature": 22,
+            "maximum_temperature": 38,
+            "weather_code": "MainlyClear"
+        }
+    }
+}

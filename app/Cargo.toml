@@ -1,0 +1,21 @@
+[package]
+name = "snowy-app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+dioxus = { version = "0.5", features = ["web"] }
+dioxus-logger = "0.5"
+wasm-bindgen = "0.2"
+wasm-bindgen-futures = "0.4"
+web-sys = "0.3"
+js-sys = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde-wasm-bindgen = "0.6"
+snowy-model = { path = "../model" }
+dioxus-signals = "^0.5"
+itertools = "0.13.0"
+thiserror = "1.0.64"
+reqwest = { version = "0.12.8", features = ["rustls-tls", "json"] }
